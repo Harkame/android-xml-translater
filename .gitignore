@@ -11,6 +11,7 @@ __pycache__
 coverage.xml
 .coverage
 venv
+*.pyc
 .pypirc
 *.log
 debug.py
@@ -18,4 +19,3 @@ __dist_version__.py
 strings.xml
 upload_pypi.sh
 *.egg-info
-*.pyc
