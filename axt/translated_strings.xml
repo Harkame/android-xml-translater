@@ -1,0 +1,15 @@
+<html><body><resources xmlns:tools="http://schemas.android.com/tools">
+
+<string name="sim_cards">Cartes SIM</string>
+<string name="permission_read_phone_state_required">L'autorisation READ_PHONE_STATE est requise pour accéder à cette fonctionnalité</string>
+<string name="enabled_on_this_sim_card">Blocage activé pour cette carte SIM</string>
+<string name="disabled_on_this_sim_card">Blocage désactivé pour cette carte SIM</string>
+<plurals name="starts_with_block_country">
+<item quantity="one">Commence par « %1$s » bloque le pays</item>
+<item quantity="other">Commence par « %1$s » bloque de nombreux pays</item>
+</plurals>
+<string name="app_updated">Application mise à jour</string>
+<string name="update_failed">Échec de la mise à jour : %1$d</string>
+<string name="update_cancelled">Mise à jour annulée</string>
+</resources>
+</body></html>

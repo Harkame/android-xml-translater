@@ -1,0 +1,53 @@
+[build-system]
+requires = [
+    "setuptools>=65.0.0",
+    "setuptools-scm>=7.1",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["android-xml-translater"]
+
+[project]
+name = "android-xml-translater"
+requires-python = ">=3.8"
+description = "Script to translate Android strings.xml"
+dynamic = ["version"]
+authors = [
+    { name = "Harkame" }
+]
+readme = "README.md"
+classifiers = ["Programming Language :: Python"]
+dependencies = [
+    "deep-translator>=1.11.4",
+    "beautifulsoup4>=4.12.2",
+    "lxml>=4.9.3",
+]
+
+[tool.setuptools_scm]
+write_to = "android_xml_translater/__dist_version__.py"
+write_to_template = "__version__ = '{version}'\n"
+version_scheme = "no-guess-dev"
+local_scheme = "no-local-version"
+
+[project.urls]
+repository = "https://github.com/Harkame/google-images-downloader"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov>=4.1.0"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+log_level = "DEBUG"
+testpaths = ["android_xml_translater/tests"]
+addopts = ""
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+
+[project.scripts]
+google-images-downloader = "android_xml_translater.__main__:main"
