@@ -7,7 +7,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["android-xml-translater"]
+packages = ["axt"]
 
 [project]
 name = "android-xml-translater"
