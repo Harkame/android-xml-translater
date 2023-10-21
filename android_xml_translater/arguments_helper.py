@@ -5,7 +5,7 @@ import os
 try:  # Normal way
     from android_xml_translater import DEFAULT_INPUT_FILE, DEFAULT_DESTINATION, DEFAULT_SOURCE
 except ImportError:  # For main tests
-    from .__main__ import DEFAULT_INPUT_FILE, DEFAULT_DESTINATION, DEFAULT_SOURCE
+    from .axt import DEFAULT_INPUT_FILE, DEFAULT_DESTINATION, DEFAULT_SOURCE
 
 try:  # Normal way
     from __version__ import __version__
