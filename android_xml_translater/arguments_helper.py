@@ -3,7 +3,7 @@ import re
 import os
 
 try:  # Normal way
-    from axt import DEFAULT_INPUT_FILE, DEFAULT_DESTINATION, DEFAULT_SOURCE
+    from android_xml_translater import DEFAULT_INPUT_FILE, DEFAULT_DESTINATION, DEFAULT_SOURCE
 except ImportError:  # For main tests
     from .__main__ import DEFAULT_INPUT_FILE, DEFAULT_DESTINATION, DEFAULT_SOURCE
 

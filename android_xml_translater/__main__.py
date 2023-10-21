@@ -1,11 +1,10 @@
 import sys
-import os
 
-from axt import AndroidXMLTranslater
-from arguments_helper import get_arguments
-
-DEFAULT_INPUT_FILE = os.path.join(".", "strings.xml")
-DEFAULT_DESTINATION = os.path.join(".")
+try:  # Normal way
+    from axt import AndroidXMLTranslater
+    from arguments_helper import get_arguments
+except ImportError:  # For main tests
+    from android_xml_translater import AndroidXMLTranslater
 
 
 def main(argv=None):

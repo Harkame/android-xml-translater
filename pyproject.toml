@@ -7,7 +7,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["axt"]
+packages = ["android_xml_translater"]
 
 [project]
 name = "android-xml-translater"
@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [tool.setuptools_scm]
-write_to = "axt/__dist_version__.py"
+write_to = "android_xml_translater/__dist_version__.py"
 write_to_template = "__version__ = '{version}'\n"
 version_scheme = "no-guess-dev"
 local_scheme = "no-local-version"
@@ -40,7 +40,7 @@ dev = ["pytest>=7", "pytest-cov>=4.1.0"]
 [tool.pytest.ini_options]
 minversion = "7.0"
 log_level = "DEBUG"
-testpaths = ["axt/tests"]
+testpaths = ["android_xml_translater/tests"]
 addopts = ""
 
 [tool.coverage.run]
@@ -50,4 +50,4 @@ branch = true
 show_missing = true
 
 [project.scripts]
-android-xml-translater = "axt.__main__:main"
+android-xml-translater = "android_xml_translater.__main__:main"
