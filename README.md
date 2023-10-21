@@ -10,6 +10,8 @@ Inspired by [GTranslate-strings-xml](https://github.com/Ra-Na/GTranslate-strings
 - [beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [lxml](https://lxml.de/)
 
+## Installation
+
 ```shell
 pip install android-xml-translater
 ```
