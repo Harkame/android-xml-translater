@@ -17,3 +17,4 @@ debug.py
 __dist_version__.py
 strings.xml
 upload_pypi.sh
+*.egg-info
