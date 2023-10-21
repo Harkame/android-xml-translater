@@ -4,7 +4,7 @@ try:  # Normal way
     from axt import AndroidXMLTranslater
     from arguments_helper import get_arguments
 except ImportError:  # For main tests
-    from android_xml_translater import AndroidXMLTranslater
+    from android_xml_translater import AndroidXMLTranslater, get_arguments
 
 
 def main(argv=None):
