@@ -50,4 +50,4 @@ branch = true
 show_missing = true
 
 [project.scripts]
-google-images-downloader = "android_xml_translater.__main__:main"
+android-xml-translater = "android_xml_translater.__main__:main"
