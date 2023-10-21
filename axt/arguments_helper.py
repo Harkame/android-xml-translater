@@ -15,32 +15,33 @@ except ImportError:  # For tests
 
 def get_arguments(arguments):
     parser = argparse.ArgumentParser(
-        description="Script to download images from a \"Google Images\" query",
+        description="Script to translate Android strings.xml",
         formatter_class=argparse.RawTextHelpFormatter,
     )
 
     parser.add_argument(
         "-f",
         "--file",
-        help="Google Images queries" + os.linesep +
-             "example (single)   : google-images-downloader -q cat",
+        help="Input file" + os.linesep +
+             "example : android-xml-translater -f C:\\strings.xml" + os.linesep +
+             "(default: %(default)s)",
         default=DEFAULT_INPUT_FILE
     )
 
     parser.add_argument(
         "-s",
         "--source",
-        help="Google Images queries" + os.linesep +
-             "example (single)   : google-images-downloader -q cat",
+        help="Input language" + os.linesep +
+             "example : google-images-downloader -s en" + os.linesep +
+             "(default: %(default)s)",
         default=DEFAULT_SOURCE
     )
 
     parser.add_argument(
         "-t",
         "--target",
-        help="Translation targets" + os.linesep +
-             "example (single)   : android-xml-translater -t fr" + os.linesep +
-             "example (multiple) : google-images-downloader -t fr de es",
+        help="Target languages" + os.linesep +
+             "example : android-xml-translater -t fr es de",
         nargs='+',
         required=True
     )
@@ -48,15 +49,16 @@ def get_arguments(arguments):
     parser.add_argument(
         "-d",
         "--destination",
-        help="Translation targets" + os.linesep +
-             "example : android-xml-translater -d C\\my\\destination",
+        help="Translations destination" + os.linesep +
+             "example : android-xml-translater -d C\\my\\destination" + os.linesep +
+             "(default: %(default)s)",
         default=DEFAULT_DESTINATION
     )
 
     parser.add_argument(
         "-v",
         "--version",
-        help="Show google-images-downloader version",
+        help="Show android-xml-translater version",
         action="version"
     )
 
